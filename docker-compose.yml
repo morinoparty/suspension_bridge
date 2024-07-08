@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  gate:
+    image: ghcr.io/morinoparty/suspension_bridge:latest
+    ports:
+      - "25565:25565"
+    volumes:
+      - /path/to/config/config.yml:/config.yml
